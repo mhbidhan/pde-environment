@@ -2,6 +2,10 @@
 
 Clone this repository in `~/dotfiles` directory.
 
+```
+git clone git@github.com:mhbidhan/pde-environment.git ~/dotfiles
+```
+
 Install Required packages
 
 - zsh
