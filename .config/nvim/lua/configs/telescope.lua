@@ -38,6 +38,9 @@ return {
     vim.keymap.set("n", "<leader>ff", builtin.find_files, {
       desc = "[F]ind [F]iles",
     })
+    vim.keymap.set("n", "<leader>fb", builtin.buffers, {
+      desc = "[F]ind [B]uffers",
+    })
     vim.keymap.set("n", "<leader>fm", ":Telescope harpoon marks<CR>", {
       desc = "[F]ind [M]arks",
     })
