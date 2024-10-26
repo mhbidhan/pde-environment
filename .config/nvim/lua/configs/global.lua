@@ -113,7 +113,8 @@ return {
     })
 
     -- Pasting without losing register
-    vim.api.nvim_set_keymap("v", "p", '"_dP', { noremap = true, silent = true })
+    vim.api.nvim_set_keymap("v", "<leader>p", '"_dP', { noremap = true, silent = true })
+    vim.api.nvim_set_keymap("n", "<leader>p", '"_dP', { noremap = true, silent = true })
 
     -- Personal keybindings
     vim.keymap.set("i", "<C-j>", "<Esc>o", {
@@ -121,6 +122,8 @@ return {
     })
     vim.keymap.set("n", "<C-d>", "<C-d>zz", {})
     vim.keymap.set("n", "<C-u>", "<C-u>zz", {})
+    vim.keymap.set("n", "n", "nzz", {})
+    vim.keymap.set("n", "N", "Nzz", {})
 
     -- Fold/Unfold code blocks
     --#region Folding
