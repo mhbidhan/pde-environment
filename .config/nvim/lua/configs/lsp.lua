@@ -89,7 +89,7 @@ return {
 
     require("mason").setup()
     local ensure_installed = vim.tbl_keys(servers or {})
-    vim.list_extend(ensure_installed, { "stylua" })
+    vim.list_extend(ensure_installed, { "stylua", "ts_ls", "biome", "ast-grep", "angularls", "prettierd" })
     require("mason-tool-installer").setup({
       ensure_installed = ensure_installed,
     })
