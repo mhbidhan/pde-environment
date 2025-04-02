@@ -8,6 +8,7 @@ return {
     local dap, dapui = require("dap"), require("dapui")
 
     dapui.setup({
+      force_buffers = false,
       icons = { expanded = "▾", collapsed = "▸", current_frame = "▸" },
       mappings = {
         expand = { "<CR>", "<2-LeftMouse>" },
