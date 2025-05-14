@@ -55,6 +55,9 @@ return {
         {
           name = "path",
         },
+        {
+          name = "codeium",
+        },
       },
     })
 
